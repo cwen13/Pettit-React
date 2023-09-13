@@ -1,0 +1,13 @@
+import React from "react";
+
+class AnimalProfile extends React.Component {
+  render() {
+    return (
+      <>
+	<p>here is an animal profile</p>
+      </>
+    );
+  };
+};
+
+export default AnimalProfile;

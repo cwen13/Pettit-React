@@ -1,0 +1,17 @@
+import React from "react";
+import Navbar from "./Navbar";
+
+class Landing extends React.Component {
+  render() {
+    return (
+      <>
+	<Navbar />
+	<p> This is where ther will be anaimals</p>
+	
+	<button> Click to populate animals</button>
+      </>
+    );
+  };
+};
+
+export default Landing;

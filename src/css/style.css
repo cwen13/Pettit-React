@@ -1,0 +1,38 @@
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.previewContainer {
+  list-style-type: none;
+}
+
+.previewContainer li {
+  width: 200px;
+}
+
+
+.petList {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+  
+
+nav ul li:first-child {
+  font-weight: bold;
+}
+
+nav {
+  border: solid purple 0.5rem;
+  margin: 0.5rem;
+}
+
+img {
+  max-height: 150px;
+}
