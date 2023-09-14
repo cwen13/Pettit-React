@@ -22,8 +22,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-	<Navbar />
 	<Router>
+	    <Navbar />
 	  <Routes>
 	    <Route 
 	      index
