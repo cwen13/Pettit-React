@@ -7,6 +7,7 @@ import samplePets from "./samplePets";
 import Landing from "./components/Landing";
 import NotFound from "./components/NotFound";
 import AnimalProfile from "./components/AnimalProfile";
+import Navbar from "./components/Navbar";
 
 class App extends React.Component {
 
@@ -20,20 +21,27 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
-	<Routes>
-	  <Route 
-	    path="/"
-	    element={<Landing pets={samplePets} />}
-	  />	
-	  <Route path="/animal/:animalId"
-		 element={<AnimalProfile />}
-		 />
-	  <Route path="/*"
-		 element={<NotFound />}
-		 />
-	</Routes>
-      </Router>
+      <>
+	<Navbar />
+	<Router>
+	  <Routes>
+	    <Route 
+	      index
+	      path="/"
+	      element={<Landing pets={samplePets} />}
+	    />	
+	    <Route path="/animal/:animalId"
+		   loader={({ params }) => {
+		     console.log("Paramss: " + params);
+		   }}
+		   element={<AnimalProfile />}
+	    />
+	    <Route path="/*"
+		   element={<NotFound />}
+	    />
+	  </Routes>
+	</Router>
+      </>
     );
   };
 };

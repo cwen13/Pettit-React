@@ -5,8 +5,6 @@ class Preview extends React.Component {
   render() {
 
     const {name, image, desc, adopted} = this.props.details;
-
-    console.log("begining",this.props);
     return (
       <li>
 	<ul className="previewContainer">
