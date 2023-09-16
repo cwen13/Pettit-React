@@ -33,6 +33,14 @@ nav {
   margin: 0.5rem;
 }
 
-img {
+.previewContainer img {
   max-height: 150px;
 }
+
+.animalProfile {
+  display:flex;
+  flex-direction: column;
+  justify-Content: center;
+  align-items: center;
+}
+    

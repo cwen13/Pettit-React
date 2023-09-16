@@ -6,7 +6,7 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-	<p> This is where ther will be anaimals</p>
+	<p>Current listing of pets</p>
 	<ul className="petList"> 
 	{Object.keys(this.props.pets).map(key => (
 	  <Preview key={key}

@@ -12,7 +12,7 @@ class Preview extends React.Component {
 	  <li>
 	    <Link to={`/animal/${this.props.index}`}
 		  state={this.props}>
-	      <img src={image} alt={name} />
+	      <img  src={image} alt={name} />
 	    </Link>
 	    {/*	    <img src={image} alt={name} />*/}
 	  </li>
