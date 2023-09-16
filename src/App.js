@@ -1,6 +1,8 @@
 import React from "react";
-import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import './App.css';
+import "./css/style.css";
 
 import samplePets from "./samplePets";
 
@@ -20,6 +22,7 @@ class App extends React.Component {
   }
 
   render() {
+    console.log(process.env);
     return (
       <>
 	<Router>
